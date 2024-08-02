@@ -35,7 +35,7 @@ resource "aws_internet_gateway" "my-igw" {
     }
 }
 
-// Routing table
+# // Routing table
 
 resource "aws_route_table" "my-rt" {
     vpc_id = aws_vpc.my-vpc.id
