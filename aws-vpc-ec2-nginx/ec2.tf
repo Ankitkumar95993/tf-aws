@@ -1,7 +1,7 @@
 
 resource "aws_instance" "nginxserver"{
-    ami="ami-068e0f1a600cd311c"
-    instance_type = "t3.micro"
+    ami="ami-025fe52e1f2dc5044"
+    instance_type = "t2.micro"
     subnet_id = aws_subnet.public-subnet.id
     vpc_security_group_ids = [aws_security_group.nginx-sg.id]
     associate_public_ip_address = true
